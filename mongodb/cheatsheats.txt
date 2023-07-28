@@ -1,0 +1,45 @@
+Tạo cơ sở dữ liệu:
+
+-use database_name
+
+Tạo bảng (collection):
+
+-db.createCollection("collection_name")
+
+Thêm dữ liệu vào bảng:
+
+-db.collection_name.insertOne({key:value})
+-db.collection_name.insertMany([{key1:value1}, {key2:value2}])
+
+
+Tìm kiếm dữ liệu trong bảng:
+
+-db.collection_name.find({key:value})
+
+Cập nhật dữ liệu trong bảng:
+
+-db.collection_name.updateOne({key:value}, {$set:{new_key:new_value}})
+-db.collection_name.updateMany({key:value}, {$set:{new_key:new_value}})
+
+Xóa dữ liệu trong bảng:
+
+-db.collection_name.deleteOne({key:value})
+-db.collection_name.deleteMany({key:value})
+
+Sắp xếp dữ liệu trong bảng:
+
+-db.collection_name.find().sort({key:1})
+-db.collection_name.find().sort({key:-1})
+
+Giới hạn số lượng dữ liệu trả về:
+
+-db.collection_name.find().limit(number)
+
+Đếm số lượng dữ liệu trong bảng:
+
+-db.collection_name.count({key:value})
+
+Tạo index:
+
+-db.collection_name.createIndex({key:1})
+-db.collection_name.createIndex({key:-1})
