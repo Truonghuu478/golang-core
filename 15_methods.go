@@ -19,10 +19,13 @@ func main() {
 	fmt.Println("Abs : ", v.Abs())
 }
 
-func (data []User) displayUsers() {
-	for user := range data {
-		fmt.Println("Abs : ", user.name)
+func (user User) returnUser() {
+	fmt.Println("user age:", user.age)
+}
 
+func displayUsers(data []User) {
+	for _, user := range data {
+		user.returnUser()
 	}
 }
 

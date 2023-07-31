@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type Namer interface {
 	dsName() string
 }
@@ -13,5 +15,6 @@ func (a Person) dsName() string {
 }
 
 func main() {
-
+	a := Person{"truong"}
+	fmt.Println(a.dsName())
 }
