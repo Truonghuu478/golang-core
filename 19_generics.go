@@ -16,14 +16,13 @@ func volume[T Number](a, b T) T {
 }
 
 //func map qua từng phần tử trong slice và transform
-func ()  {
-	
+
+func transform() {
+
 }
 
 func main() {
-	
-	
-	fmt.Println("tich :",  volume(2, 3))
-	fmt.Println("sum :",  sum(2, 3))
+	fmt.Println("tich :", volume(2, 3))
+	fmt.Println("sum :", sum(2, 3))
 
 }
